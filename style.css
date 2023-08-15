@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 0%, rgba(227, 255, 248, 0.38) 100%); /* este é para colocar uma cor no fundo*/
+  
+  min-height: 100vh; /* este aqui é para não ter rolagem na pagina, ela ficar  fixa */
+  }
+  .page{
+    width: 1000px;
+    margin:  0 auto ; /*aqui a margin é 0 e auto nas laterais para haver margin em cima de 65px precimsamos adicionar outro elemento*/
+    padding-top: 65px; /* aqui coloca a margin que vai dar um preenchimento da parte de cima do treine.me, se usar margin 65px vai empurrar para baixo ai acontece rolamento */
+  }
+  
+  /* este aqui é para deixar tudo que esta na tag nav no html mais bonito */ 
+  nav{
+    display: flex; /* este deixa uma elemento do lado do outro*/
+    justify-content: space-between; /* este da um espaço entre os elementos deixando cada um em um canto  */
+    align-items: center; /*este alinha os elementos que é o alinhamento central */ 
+    margin-bottom: 55px; /* este aqui da um espaço do titulo para os elementos que estão na nav */
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  ul{
+    display: flex; /* este deixa um elemento do lado do outro  */
+    gap: 48px; /* este da um espaço entre os elementos que são home, sobre  */
+    list-style: none; /* este tira as bolinhas que estao no ul*/
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #1f1534;
+    text-decoration: none;
+  }
+  
+  ul li a {
+    opacity: 0.5; /* este é uma propriedade deixa mais suaves os elemnto ul que são home etc..*/
+  }
+  
+  /* este aqui é para quando o mouse passar por cima */
+  ul li a:hover{
+    font-weight: bold;
+    opacity: 1; /* aqui vai deixar o elemento mais escurinho*/
+    
+  }
+  
+  h1, ul{
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  main {
+    display: flex; /* este aqui vai colocar a imagem no canto dela vai deixar o elemento do lado do outro*/
+    align-items: center; /* este vai alinhar os elementos que é o alinhamento central */
+    justify-content: space-between; /* do mesmo modo do outro este vai dar um espaçamento dos elementos */
+  }
+  
+  /* este aqui vai configurar tamanho da fonte e cor de tudo que tiver dentro da tag h1*/
+  h1{
+    font-size: 49px; /* largura da fonte*/
+    line-height: 56px; /* altura da fonte */
+    color: #1f1534;
+    font-weight: normal;
+  }
+  
+  /* este aqui define a cor do span que esta na tag h1 */
+  h1 span{
+    color: #89c5cc /* cor das palavras que estão marcadas com span */ 
+  }
+  
+  /* este define o texto que estão dentro do section desde sua altura e seu espaçamento de linhas com o titulo e o bottom*/
+   section p {
+    font-size: 14px; /* largura da fonte*/ 
+    line-height: 28px;  /*altura da fonte */
+    color: #7d7987;  
+    margin: 40px 0; /* este vai adiconar 40 em cima, lateral e zero embaixo */
+  
+  }
+  
+  button {
+    color: white;
+    text-transform: uppercase; /* este é para deixxar o texto que esta escrito no bottom maisculo */
+    font-family: 'Open Sans', sans-serif;
+    background: #69b99d; /* este é a cor de fundo do bottom*/
+    border: 0; /* pode usar none ou zero, este é a borda do bottom */
+    padding: 14px 32px 15px;
+    /* para não precisar colocar 
+    pading top 
+    pading left
+    pading right
+    da forma acima aplica para todos*/
+  
+    /* agora vamos alinhar os elemntos do bottom*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* este é o espaçamento do icone do whatsap e da mensagem*/ 
+    border-radius: 4px; /* este vai trabalhar o arrendodamento da borda da cixa do whats*/
+    cursor: pointer; /* este aqui é para quando passar a setinha no bottom do whats, vai aparecer uma mâozinha*/
+    
+  }
+  
+  /* este aqui é para quando o mouse passar por cima e ter um efeito*/
+  button:hover{
+    background: #4ea788; /* aqui vai ficara cor quando passar por cima do bottom*/
+  
+  }
+  
+  /* este é para o que esta escrito no footer do html*/
+  footer {
+    font-size: 14px; /* largura da fonte*/ 
+    line-height: 28px; /*altura da fonte */
+    text-align: center; /* este aqui centraliza o footer htm */
+    margin-top: 80px; /* este aqui define o espaçamento da imagem para o footer*/
+    padding-top: 50px;
+  }
+  
+  footer a{
+    font-weight: bold; /* peso da fonte*/
+  }
+  
+  #balls{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  
+  }
